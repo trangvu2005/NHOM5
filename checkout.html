@@ -1762,14 +1762,11 @@
                                                     <div class="gl-inline">
                                                         <div class="u-s-m-b-15">
                                                             <button class="btn btn--e-transparent-brand-b-2"
-                                                                type="submit">
-                                                                ĐĂNG NHẬP
-                                                            </button>
+                                                                type="submit"> ĐĂNG NHẬP </button>
                                                         </div>
 
                                                         <div class="u-s-m-b-15">
-                                                            <a class="gl-link" href="lost-password.html">
-                                                                Quên mật khẩu?
+                                                            <a class="gl-link" href="lost-password.html"> Quên mật khẩu?
                                                             </a>
                                                         </div>
                                                     </div>
@@ -1778,8 +1775,7 @@
                                                     <div class="check-box">
                                                         <input type="checkbox" id="remember-me">
                                                         <div class="check-box__state check-box__state--primary">
-                                                            <label class="check-box__label" for="remember-me">Ghi nhớ
-                                                                đăng nhập</label>
+                                                            <label class="check-box__label" for="remember-me">Ghi nhớ đăng nhập</label>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -1787,42 +1783,68 @@
                                         </div>
                                     </div>
 
+
                                     <!-- Mã giảm giá -->
                                     <div class="msg">
+
                                         <span class="msg__text">
                                             Bạn có mã giảm giá?
-                                            <a class="gl-link" href="#have-coupon" data-toggle="collapse">
-                                                Nhấn vào đây để nhập mã
-                                            </a>
+                                            <a class="gl-link" href="#have-coupon" data-toggle="collapse"> Nhấn vào đây
+                                                để xem & áp dụng </a>
                                         </span>
 
-                                        <div class="collapse" id="have-coupon" data-parent="#checkout-msg-group">
+                                        <div class="collapse show" id="have-coupon" data-parent="#checkout-msg-group">
                                             <div class="c-f u-s-m-b-16">
+
                                                 <span class="gl-text u-s-m-b-16">
-                                                    Nhập mã giảm giá nếu bạn có.
+                                                    Nhập mã giảm giá hoặc chọn mã bên dưới
                                                 </span>
 
+                                                <!-- Ô nhập mã -->
                                                 <form class="c-f__form">
                                                     <div class="u-s-m-b-16">
-                                                        <div class="u-s-m-b-15">
-                                                            <label for="coupon"></label>
-                                                            <input class="input-text input-text--primary-style"
-                                                                type="text" id="coupon" placeholder="Mã giảm giá">
-                                                        </div>
-
-                                                        <div class="u-s-m-b-15">
-                                                            <button class="btn btn--e-transparent-brand-b-2"
-                                                                type="submit">
-                                                                ÁP DỤNG
-                                                            </button>
-                                                        </div>
+                                                        <input class="input-text input-text--primary-style" type="text"
+                                                            id="coupon" placeholder="Nhập mã giảm giá">
                                                     </div>
+
+                                                    <button class="btn btn--e-transparent-brand-b-2" type="submit"> ÁP DỤNG  </button>
                                                 </form>
+
+                                                <!-- ===== DANH SÁCH MÃ GIẢM GIÁ  ===== -->
+                                                <div class="voucher-list u-s-m-t-20">
+                                                    <span class="gl-text u-s-m-b-12"> Mã khuyến mãi khả dụng</span>
+
+                                                    <!-- Voucher 1 -->
+                                                    <label class="voucher-item">
+                                                        <input type="radio" name="voucher" value="UEH20K"
+                                                            onchange="applyVoucherRadio(this)">
+                                                        <span class="voucher-radio"></span>
+                                                        <div class="voucher-info">
+                                                            <span class="voucher-name"> UEH20K – Giảm 20.000đ </span>
+                                                            <span class="voucher-condition"> Đơn tối thiểu 120.000đ
+                                                            </span>
+                                                        </div>
+                                                    </label>
+
+                                                    <!-- Voucher 2 -->
+                                                    <label class="voucher-item">
+                                                        <input type="radio" name="voucher" value="UEH10P"
+                                                            onchange="applyVoucherRadio(this)">
+                                                        <span class="voucher-radio"></span>
+                                                        <div class="voucher-info"><span class="voucher-name"> UEH10P –
+                                                                Giảm 10%</span>
+                                                            <span class="voucher-condition"> Tối đa 50.000đ </span>
+                                                        </div>
+                                                    </label>
+
+                                                </div>
+                                                <!-- ===== KẾT THÚC DANH SÁCH ===== -->
 
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Kết thúc_ mã giảm giá -->
+
 
                                 </div>
                             </div>
@@ -1917,14 +1939,13 @@
 
                                                         <div class="o-card__img-wrap">
                                                             <img class="u-img-fluid"
-                                                                src="images/product/electronic/product3.jpg" alt="">
+                                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-fpRTF_gPGXDsjnINQNipGkVKnvfOB6wa8Q&s" alt="">
                                                         </div>
 
                                                         <div class="o-card__info-wrap">
 
                                                             <span class="o-card__name">
-                                                                <a href="product-detail.html">Workshop: Tư duy thiết
-                                                                    kế</a>
+                                                                <a href="product-detail.html">WORKSHOP: TƯ DUY THIẾT KẾ</a>
                                                             </span>
                                                             <div class="u-s-m-b-15">
                                                                 <div class="input-counter">
@@ -1956,21 +1977,18 @@
                                         <div class="o-summary__box">
                                             <table class="o-summary__table">
                                                 <tbody>
+                                                    
                                                     <tr>
-                                                        <td>PHÍ VẬN CHUYỂN</td>
-                                                        <td>4.00 USD</td>
+                                                        <td>GIÁ VÉ</td>
+                                                        <td>15.000 VND </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>THUẾ</td>
-                                                        <td>0.00 USD</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>TẠM TÍNH</td>
-                                                        <td>379.00 USD</td>
+                                                        <td>KHUYẾN MÃI</td>
+                                                        <td>0</td>
                                                     </tr>
                                                     <tr>
                                                         <td>TỔNG CỘNG</td>
-                                                        <td>379.00 USD</td>
+                                                        <td>15.000 VND</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
