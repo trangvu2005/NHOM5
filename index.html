@@ -2295,41 +2295,153 @@
 
 
         <!--====== Main Footer ======-->
-        <footer class="footer-figma">
-            <div class="footer-inner">
-        
-                <!-- LOGO -->
-                <div class="footer-logo">
-                    <img src="images/logo/logoUEH.png" alt="UEH University">
+        <style>
+        /* ===== FOOTER NỀN GRADIENT ===== */
+        .outer-footer {
+            background: linear-gradient(90deg, #0bb3c6 0%, #047a87 100%);
+            padding: 70px 0;
+            color: #fff;
+            position: relative;
+        }
+            
+        /* ===== ROW FOOTER XẾP NGANG ===== */
+        .footer-row {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 80px;
+        }
+            
+        /* ===== LOGO ===== */
+        .footer-logo img {
+            width: 140px;
+        }
+            
+        /* ===== CỘT FOOTER ===== */
+        .footer-col {
+            flex: 1;
+        }
+            
+        /* ===== TIÊU ĐỀ ===== */
+        .outer-footer__content-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 18px;
+            display: block;
+        }
+            
+        /* ===== TEXT LIÊN HỆ ===== */
+        .outer-footer__text-wrap {
+            display: flex;
+            gap: 10px;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 10px;
+            color: #eafafa;
+        }
+            
+        .outer-footer__text-wrap i {
+            margin-top: 4px;
+        }
+            
+        /* ===== TEXT ĐIỀU KHOẢN ===== */
+        .footer-col p {
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 6px;
+            color: #eafafa;
+        }
+            
+        /* ===== ICON MXH GÓC PHẢI DƯỚI ===== */
+        .footer-social {
+            position: absolute;
+            right: 60px;
+            bottom: 40px;
+            display: flex;
+            gap: 20px;
+        }
+            
+        .footer-social a {
+            font-size: 22px;
+            color: #fff;
+            transition: transform 0.3s;
+        }
+            
+        .footer-social a:hover {
+            transform: scale(1.15);
+        }
+            
+        /* ===== RESPONSIVE MOBILE ===== */
+        @media (max-width: 768px) {
+            .footer-row {
+                flex-direction: column;
+                gap: 40px;
+            }
+            
+            .footer-social {
+                position: static;
+                margin-top: 30px;
+                justify-content: center;
+            }
+        }
+        </style>
+            
+        <footer class="outer-footer">
+            <div class="container">
+                <div class="row footer-row">
+            
+                    <!-- LOGO UEH -->
+                    <div class="footer-logo">
+                        <img src="images/logo/logoUEH.png" alt="UEH University">
+                    </div>
+            
+                    <!-- THÔNG TIN LIÊN HỆ -->
+                    <div class="footer-col">
+                        <span class="outer-footer__content-title">Thông tin liên hệ</span>
+            
+                        <div class="outer-footer__text-wrap">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>279 Nguyễn Tri Phương, Phường 5, Quận 10, TP. Hồ Chí Minh</span>
+                        </div>
+            
+                        <div class="outer-footer__text-wrap">
+                            <i class="fas fa-phone-volume"></i>
+                            <span>(028) 7306.1976</span>
+                        </div>
+            
+                        <div class="outer-footer__text-wrap">
+                            <i class="far fa-envelope"></i>
+                            <span>dsa@ueh.edu.vn</span>
+                        </div>
+            
+                        <div class="outer-footer__text-wrap">
+                            <i class="fas fa-globe"></i>
+                            <span>ueheventhub.vn</span>
+                        </div>
+                    </div>
+            
+                    <!-- ĐIỀU KHOẢN & QUY ĐỊNH -->
+                    <div class="footer-col">
+                        <span class="outer-footer__content-title">Điều khoản & Quy định</span>
+            
+                        <p><strong>Dành cho Khách hàng</strong></p>
+                        <p>Điều khoản sử dụng cho Khách hàng</p>
+            
+                        <p style="margin-top:12px"><strong>Dành cho Ban tổ chức</strong></p>
+                        <p>Điều khoản sử dụng cho Ban tổ chức</p>
+                    </div>
+            
                 </div>
-        
-                <!-- THÔNG TIN LIÊN HỆ -->
-                <div class="footer-contact">
-                    <h4>Thông tin liên hệ</h4>
-                    <p>279 Nguyễn Tri Phương, Phường 5, Quận 10, TP. HCM</p>
-                    <p>(028) 7306.1976</p>
-                    <p>dsa@ueh.edu.vn</p>
-                    <p>ueheventhub.vn</p>
-                </div>
-        
-                <!-- ĐIỀU KHOẢN -->
-                <div class="footer-policy">
-                    <h4>Điều khoản & Quy định</h4>
-                    <p><strong>Dành cho Khách hàng</strong></p>
-                    <p>Điều khoản sử dụng cho Khách hàng</p>
-                    <p><strong>Dành cho Ban tổ chức</strong></p>
-                    <p>Điều khoản sử dụng cho Ban tổ chức</p>
-                </div>
-        
+            
                 <!-- ICON MXH -->
                 <div class="footer-social">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-tiktok"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
-        
             </div>
         </footer>
+            
         
 
         <!--====== Modal Section ======-->
