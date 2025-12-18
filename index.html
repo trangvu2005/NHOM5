@@ -171,40 +171,40 @@
             <nav class="secondary-nav-wrapper">
                 <div class="container">
 
+                    <style>
+                        /* ===== HEADER FLEX ===== */
+                        .secondary-nav {
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                        }
+                    
+                        /* ===== NAV 2 (MENU CHÍNH) Ở GIỮA ===== */
+                        #navigation2 {
+                            margin: 0 auto;
+                        }
+                    
+                        /* ===== NAV 3 (ICON) Ở PHẢI ===== */
+                        .header-icons,
+                        .nav-3,
+                        .right-icons {
+                            margin-left: auto;
+                            display: flex;
+                            align-items: center;
+                        }
+                    
+                        .header-icons a,
+                        .nav-3 a,
+                        .right-icons a {
+                            margin-left: 18px;
+                        }
+                    </style>
+                    
                     <!--====== Secondary Nav ======-->
                     <div class="secondary-nav">
 
                         <!--====== Dropdown Main plugin ======-->
                         <div class="menu-init" id="navigation2">
-
-                            <style>
-                                /* ===== CĂN GIỮA NAV 2 ===== */
-                                .secondary-nav {
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                }
-                            
-                                .secondary-nav-wrapper .container {
-                                    display: flex;
-                                    justify-content: center;
-                                }
-                            
-                                .secondary-nav .ah-lg-mode {
-                                    display: flex;
-                                    justify-content: center;
-                                }
-                            
-                                .secondary-nav .ah-list {
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                }
-                            
-                                .secondary-nav .ah-list > li {
-                                    margin: 0 18px;
-                                }
-                            </style>
                             <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-cog" type="button"></button>
 
                             <!--====== Menu ======-->
@@ -261,25 +261,7 @@
 
 
                         <!--====== Dropdown Main plugin ======-->
-                        <div class="menu-init" id="navigation3">
-                            <style>
-                                /* ===== CĂN PHẢI NAV 3 ===== */
-                                .nav-3 {
-                                    display: flex;
-                                    justify-content: flex-end;
-                                    align-items: center;
-                                }
-                            
-                                .nav-3 ul {
-                                    display: flex;
-                                    justify-content: flex-end;
-                                    align-items: center;
-                                }
-                            
-                                .nav-3 li {
-                                    margin-left: 18px;
-                                }
-                            </style>                            
+                        <div class="menu-init" id="navigation3">                         
                             <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-shopping-bag toggle-button-shop" type="button"></button>
 
                             <span class="total-item-round">2</span>
