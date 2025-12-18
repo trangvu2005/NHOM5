@@ -657,8 +657,8 @@ body {
 .gl-link {
   font-size: 13px;
   font-weight: 600;
-  color: #ff4500;
-  transition: color 0.5s linear;
+  color: #0e7e9b;
+  transition: color 0.3s linear;
 }
 
 .gl-link:hover {
