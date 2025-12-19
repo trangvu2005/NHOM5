@@ -2931,8 +2931,6 @@ Responsive
   position: absolute;
   bottom: 30px;
   right: 40px;
-  display: flex;
-  gap: 20px;
 }
 
 .footer-social a {
