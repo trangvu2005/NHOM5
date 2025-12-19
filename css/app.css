@@ -2928,9 +2928,9 @@ Responsive
 
 /* ===== SOCIAL ICON ===== */
 .footer-social {
-  position: absolute;
-  bottom: 30px;
-  right: 40px;
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
 }
 
 .footer-social a {
