@@ -799,7 +799,7 @@ body {
 }
 
 .u-c-secondary {
-  color: #ffffff !important;
+  color: #005A5D !important;
 }
 
 .u-c-white {
@@ -3182,7 +3182,7 @@ input::-ms-clear {
 
 .section__text-wrap {
   text-align: center;
-  background-color: #00796b;
+  background-color: #f7f7f9;
 }
 
 .section__content {
@@ -3192,7 +3192,7 @@ input::-ms-clear {
 .section__heading {
   font-size: 28px;
   font-weight: 800;
-  color: #f7f7f9;
+  color: #00796b;
 
   text-transform: uppercase;
   position: relative;
