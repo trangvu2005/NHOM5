@@ -2701,24 +2701,26 @@ input::-ms-clear {
 }
 
 /*--------------------------------------------------------------
-6.2 Secondary Nav (NAV 2) - FINAL, KEEP DROPDOWN
+6.2 Secondary Nav (NAV 2)
 --------------------------------------------------------------*/
 .secondary-nav {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   height: 80px;
   width: 100%;
-  background-color: #ffffff; /* trắng toàn phần */
+  background-color: #ffffff; /* NAV 2: trắng toàn phần */
   border-bottom: 1px solid #e6e6e6;
-  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0 40px;
 }
 
-/* ===== MENU CHÍNH (GIỮA TUYỆT ĐỐI) ===== */
+/* Canh giữa menu chính */
 .secondary-nav .menu-init {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 /* Menu cấp 1 */
@@ -2736,17 +2738,12 @@ input::-ms-clear {
   text-decoration: none;
 }
 
+/* Hover menu */
 .secondary-nav .ah-list--design1 > li > a:hover {
   color: #1c5d6b;
 }
 
-/* ===== ICON (CANH PHẢI) ===== */
-.secondary-nav .ah-list--icons {
-  margin-left: auto;
-  display: flex;
-  gap: 25px;
-}
-
+/* Icon NAV 2 */
 .secondary-nav i {
   color: #000000;
   font-size: 18px;
@@ -2756,17 +2753,20 @@ input::-ms-clear {
   color: #1c5d6b;
 }
 
-/* ===== DROPDOWN – GIỮ NGUYÊN LOGIC GỐC ===== */
+/*--------------------------------------------------------------
+Dropdown (GIỮ NGUYÊN HOẠT ĐỘNG)
+--------------------------------------------------------------*/
+/* KHÔNG set display cho ul dropdown */
 .has-dropdown {
-  position: relative; /* bắt buộc cho dropdown */
+  position: relative;
 }
 
 .has-dropdown > ul {
   background-color: #ffffff;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Item trong dropdown */
+/* Item dropdown */
 .has-dropdown > ul li a {
   color: #000000;
   font-size: 14px;
@@ -2776,7 +2776,6 @@ input::-ms-clear {
   background-color: #f5f5f5;
   color: #1c5d6b;
 }
-
 
 /*--------------------------------------------------------------
 Superscript / Badge
