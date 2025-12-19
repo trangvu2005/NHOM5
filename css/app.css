@@ -2659,14 +2659,15 @@ input::-ms-clear {
 
 .main-logo.text-logo {
   color: #ffffff;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 700;
   text-decoration: none;
 }
 
 .main-logo.text-logo span {
+  color: #f58220;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   margin-left: 6px;
   opacity: 0.9;
 }
@@ -2873,12 +2874,12 @@ Responsive
   display: block;
   font-size: 64px;
   font-weight: 800;
-  color: #006d75;
+  color: #ffffff;
   line-height: 1;
 }
 
 .footer-logo::after {
-  content: "UNIVERSITY";
+  content: "EVEVENT HUB";
   display: block;
   font-size: 26px;
   font-weight: 700;
@@ -8888,15 +8889,15 @@ body {
 }
 
 .hero-slide--1 {
-  background-image: url(../images/slider/slide-1.jpg);
+  background-image: url(../images/slider/anh1.webp);
 }
 
 .hero-slide--2 {
-  background-image: url(../images/slider/slide-2.jpg);
+  background-image: url(../images/slider/anh2.webp);
 }
 
 .hero-slide--3 {
-  background-image: url(../images/slider/slide-3.jpg);
+  background-image: url(../images/slider/anh3.webp);
 }
 
 .hero-slide--4 {
