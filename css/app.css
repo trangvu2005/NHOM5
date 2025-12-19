@@ -2606,209 +2606,111 @@ input::-ms-clear {
   }
 }
 
-/* ==================================================
-   CUSTOM HEADER NAV 1 - UEH EVENT HUB
-   ================================================== */
+/*--------------------------------------------------------------
+6.0 Header
+--------------------------------------------------------------*/
+.header-wrapper {
+  position: relative; }
 
-/* Header background */
 .header--style-1 {
-  background-color: #1c5d6b; /* xanh giống mockup */
-}
+  background-color: #ffffff; }
 
+.header--style-2 {
+  background-color: #242424; }
+
+.header--style-3 {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  z-index: 2; }
+
+.header--box-shadow {
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.07); }
+
+/* 6.1 Primary Nav */
 .primary-nav-wrapper--border {
-  border-bottom: none;
-}
+  border-bottom: 1px solid #f8f8f8; }
 
-/* Primary nav layout giữ nguyên */
 .primary-nav {
-  height: 80px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* ================= LOGO TEXT ================= */
-.text-logo {
-  font-size: 40px;
-  font-weight: 700;
-  color: #ffffff;
-  text-decoration: none;
-  letter-spacing: 1px;
-  display: inline-flex;
-  align-items: center;
-}
-
-.text-logo span {
-  font-size: 16px;
-  font-weight: 400;
-  margin-left: 6px;
-  opacity: 0.9;
-}
-
-/* ================= SEARCH ================= */
-.main-form {
-  width: 40%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
-}
+  height: 80px;
+  width: 100%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.main-logo {
+  display: inline-block;
+  vertical-align: top; }
+  .main-logo img {
+    display: block; }
+
+.main-form {
+  position: relative;
+  width: 35%; }
 
 #main-search {
-  width: 100%;
-  padding: 10px 45px 10px 20px;
-  border-radius: 25px;
-  border: none;
-  outline: none;
-}
+  padding: 0 36px 0 18px;
+  width: 100%; }
 
 .main-search-button {
   position: absolute;
   top: 50%;
-  right: 18px;
-  transform: translateY(-50%);
-  font-size: 18px;
-  color: #000000;
-  background: transparent;
-}
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 18px; }
 
-/* ================= RIGHT ICON MENU ================= */
-.ah-list--link-color-secondary > li > a {
-  color: #000000;
-}
-
-.ah-list--link-color-secondary > li > a i {
-  font-size: 18px;
-}
-
-.ah-list--link-color-secondary > li > a:hover {
-  color: #333333;
-}
-
-/* ================= DROPDOWN ================= */
-.ah-list ul {
-  background-color: #ffffff;
-}
-
-.ah-list ul li a {
-  color: #000000;
-}
-
-.ah-list ul li a:hover {
-  background-color: #f2f2f2;
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
-  .main-form {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .primary-nav {
-    height: auto;
-  }
-}
-
-
-/* ==================================================
-   CUSTOM SECONDARY NAV - LOGO RIGHT
-   ================================================== */
-
+/* 6.2 Secondary Nav */
 .secondary-nav {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
   height: 80px;
   width: 100%;
-  background-color: #ffffff;
-  border-bottom: 1px solid #eaeaea;
-  padding: 0 30px;
-}
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
 
-/* ===== MENU CHÍNH (CANH GIỮA) ===== */
-.secondary-nav .menu-init {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
+.has-superscript {
+  position: relative; }
+  .has-superscript:before {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: 10px;
+    padding: 1px 7px;
+    color: #ffffff; }
+  .has-superscript--discount20:before {
+    content: '-20% OFF'; }
+  .has-superscript--new:before {
+    content: 'NEW'; }
+  .has-superscript--hot:before {
+    content: 'HOT'; }
+  .has-superscript--sale:before {
+    content: 'SALE'; }
+  .has-superscript--purple:before {
+    background-color: #8d54ec; }
+  .has-superscript--orange:before {
+    background-color: #ff1500; }
+  .has-superscript--mud:before {
+    background-color: #878a85; }
+  .has-superscript--ruby:before {
+    background-color: #ee1a3d; }
 
-/* Danh sách menu */
-.secondary-nav .ah-list {
-  display: flex;
-  gap: 60px;
-}
-
-/* Chữ menu */
-.secondary-nav .ah-list > li > a {
-  color: #000000;
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.secondary-nav .ah-list > li > a:hover {
-  color: #1c5d6b;
-}
-
-/* ===== LOGO (BÊN PHẢI) ===== */
-.secondary-nav .main-logo,
-.secondary-nav .text-logo {
-  margin-left: auto; /* đẩy logo sang phải */
-  color: #000000;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-/* ===== ICON / SUPERSCRIPT ===== */
-.secondary-nav i {
-  color: #000000;
-  font-size: 18px;
-}
-
-.secondary-nav i:hover {
-  color: #1c5d6b;
-}
-
-.has-superscript::before {
-  background-color: #1c5d6b;
-  border-radius: 12px;
-}
-
-/* ===== DROPDOWN ===== */
-.secondary-nav .ah-list ul {
-  background-color: #ffffff;
-}
-
-.secondary-nav .ah-list ul li a {
-  color: #000000;
-}
-
-.secondary-nav .ah-list ul li a:hover {
-  background-color: #f2f2f2;
-}
-
-/* ===== RESPONSIVE ===== */
 @media (max-width: 991px) {
-  .secondary-nav {
-    flex-wrap: wrap;
-    height: auto;
-    padding: 15px;
-  }
-
-  .secondary-nav .menu-init {
-    justify-content: flex-start;
-  }
-
-  .secondary-nav .ah-list {
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  .secondary-nav .main-logo,
-  .secondary-nav .text-logo {
-    margin-left: 0;
-  }
-}
-
+  .header--style-3 {
+    position: relative;
+    background-color: #242424; } }
 
 /*--------------------------------------------------------------
 7.0 Footer
