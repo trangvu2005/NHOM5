@@ -1010,7 +1010,7 @@ body {
 }
 
 .btn--e-transparent-platinum-b-2:hover {
-  border-color: #083e48;
+  border-color: #ff4500;
 }
 
 .btn--e-white-brand-shadow {
@@ -1020,37 +1020,24 @@ body {
   color: #333333;
   transition: background-color .3s linear, border-color .3s linear, color .3s linear;
 }
-/**co sua**/
+
 .btn--e-white-brand-shadow:hover {
-  border-color: #076358;
-  background-color: #076358;
+  border-color: #ff4500;
+  background-color: #ff4500;
   color: #ffffff;
 }
 
 .btn--e-brand-shadow {
-  border: 1px solid #063b37;
+  border: 1px solid #ff4500;
   box-shadow: 1px 2px 8px 0 rgba(36, 37, 38, 0.08);
-  background-color: #076358;
+  background-color: #ff4500;
   color: #ffffff;
   transition: background-color .3s linear, border-color .3s linear;
 }
 
 .btn--e-brand-shadow:hover {
-  border-color: #060606;
-  background-color: #095442;
-}
-
-/* Trang trí viền và bóng cho Modal */
-.custom-modal-border {
-    border: none !important;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
-}
-
-/* Hiệu ứng hover cho nút thanh toán */
-.btn--e-brand-shadow:hover {
-    transform: translateY(-2px);
-    opacity: 0.9;
+  border-color: #fa4400;
+  background-color: #fa4400;
 }
 
 /* Countdown Component */
@@ -2619,78 +2606,107 @@ input::-ms-clear {
   }
 }
 
-/*--------------------------------------------------------------
-6.0 Header
---------------------------------------------------------------*/
-.header-wrapper {
-  position: relative;
-}
+/* ==================================================
+   CUSTOM HEADER NAV 1 - UEH EVENT HUB
+   ================================================== */
 
+/* Header background */
 .header--style-1 {
-  background-color: #ffffff;
+  background-color: #1c5d6b; /* xanh giống mockup */
 }
 
-.header--style-2 {
-  background-color: #242424;
-}
-
-.header--style-3 {
-  position: absolute;
-  width: 100%;
-  background-color: transparent;
-  z-index: 2;
-}
-
-.header--box-shadow {
-  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.07);
-}
-
-/* 6.1 Primary Nav */
 .primary-nav-wrapper--border {
-  border-bottom: 1px solid #f8f8f8;
+  border-bottom: none;
 }
 
+/* Primary nav layout giữ nguyên */
 .primary-nav {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  position: relative;
   height: 80px;
-  width: 100%;
-  -ms-flex-pack: justify;
+  display: flex;
   justify-content: space-between;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-.main-logo {
-  display: inline-block;
-  vertical-align: top;
+/* ================= LOGO TEXT ================= */
+.text-logo {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
 }
 
-.main-logo img {
-  display: block;
+.text-logo span {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 6px;
+  opacity: 0.9;
 }
 
+/* ================= SEARCH ================= */
 .main-form {
+  width: 40%;
   position: relative;
-  width: 35%;
 }
 
 #main-search {
-  padding: 0 36px 0 18px;
   width: 100%;
+  padding: 10px 45px 10px 20px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
 }
 
 .main-search-button {
   position: absolute;
   top: 50%;
-  right: 15px;
-  -webkit-transform: translateY(-50%);
+  right: 18px;
   transform: translateY(-50%);
   font-size: 18px;
+  color: #000000;
+  background: transparent;
 }
+
+/* ================= RIGHT ICON MENU ================= */
+.ah-list--link-color-secondary > li > a {
+  color: #000000;
+}
+
+.ah-list--link-color-secondary > li > a i {
+  font-size: 18px;
+}
+
+.ah-list--link-color-secondary > li > a:hover {
+  color: #333333;
+}
+
+/* ================= DROPDOWN ================= */
+.ah-list ul {
+  background-color: #ffffff;
+}
+
+.ah-list ul li a {
+  color: #000000;
+}
+
+.ah-list ul li a:hover {
+  background-color: #f2f2f2;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .main-form {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .primary-nav {
+    height: auto;
+  }
+}
+
 
 /* 6.2 Secondary Nav */
 .secondary-nav {
@@ -4123,12 +4139,9 @@ input::-ms-clear {
   display: inline-block;
   transition: color 0.5s;
 }
-/**sửa**/
+
 .route-box__link:hover {
-  background: #333;
-    color: #fff;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);;
+  color: #ff4500;
 }
 
 .route-box i {
@@ -4287,68 +4300,6 @@ input::-ms-clear {
   box-shadow: 0 4px 12px rgba(0, 121, 107, 0.3);
 }
 
-/* Container định danh riêng cho trang Wishlist */
-.wishlist-page-intro {
-    padding: 40px 0;
-    background-color: #fcfcfc; /* Nền xám cực nhẹ để phân biệt với phần thân */
-    border-bottom: 1px solid #f0f0f0;
-}
-
-/* Tùy chỉnh tiêu đề h1 bên trong */
-.wishlist-page-intro .section__heading {
-    font-size: 32px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    position: relative;
-    padding-bottom: 15px;
-    margin-bottom: 0;
-    color: #333 !important; /* Ghi đè màu secondary nếu cần */
-    text-align: center;
-}
-
-/* Hiệu ứng đường kẻ trang trí dưới chữ */
-.wishlist-page-intro .wishlist-line {
-    width: 60px;
-    height: 4px;
-    background-color: #ff4500; /* Màu cam thương hiệu (có thể thay đổi) */
-    margin: 0 auto;
-    border-radius: 10px;
-    position: relative;
-}
-
-/* Thêm hiệu ứng 2 chấm nhỏ 2 bên đường kẻ cho sang trọng */
-.wishlist-page-intro .wishlist-line::before,
-.wishlist-page-intro .wishlist-line::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: #ff4500;
-    opacity: 0.5;
-}
-
-.wishlist-page-intro .wishlist-line::before { left: -15px; }
-.wishlist-page-intro .wishlist-line::after { right: -15px; }
-
-/* Hiệu ứng mờ dần khi tải trang (Animation) */
-.wishlist-page-intro .section__text-wrap {
-    animation: fadeInUp 0.8s ease-out;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 /*--------------------------------------------------------------
 12.0 Empty-404-Pages
 --------------------------------------------------------------*/
