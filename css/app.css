@@ -2722,12 +2722,6 @@ input::-ms-clear {
   left: 50%;
   transform: translateX(-50%);
 }
-/* Icon NAV 2 canh phải */
-.secondary-nav .ah-list--icons {
-  margin-left: auto;
-  display: flex;
-  gap: 25px;
-}
 
 
 /* Menu cấp 1 */
