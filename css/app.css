@@ -2700,37 +2700,41 @@ input::-ms-clear {
   color: #000000;
 }
 
-/*--------------------------------------------------------------
-6.2 Secondary Nav (NAV 2)
---------------------------------------------------------------*/
+/* ==================================================
+   NAV 2 – CANH GIỮA MENU BẰNG "CỤC TRẮNG GIẢ"
+   ================================================== */
+
+/* NAV 2 nền trắng toàn phần */
 .secondary-nav {
-  display: flex;
-  flex-wrap: wrap;
   position: relative;
   height: 80px;
   width: 100%;
-  background-color: #ffffff; /* NAV 2: trắng toàn phần */
+  background-color: #ffffff;
   border-bottom: 1px solid #e6e6e6;
-  justify-content: space-between;
+
+  display: flex;
   align-items: center;
-  padding: 0 40px;
 }
 
-/* Canh giữa menu chính */
-.secondary-nav .menu-init {
-  flex: 1;
+/* ===== CỤC TRẮNG GIẢ BÊN TRÁI ===== */
+.secondary-nav::before {
+  content: "";
+  flex: 0 0 140px; /* 👈 chỉnh cho BẰNG độ rộng icon bên phải */
+}
+
+/* ===== MENU CHỮ (GIỮ NGUYÊN DROPDOWN) ===== */
+#navigation2 {
   display: flex;
   justify-content: center;
 }
 
-/* Menu cấp 1 */
-.secondary-nav .ah-list--design1 {
+/* menu chữ */
+#navigation2 .ah-list--design2 {
   display: flex;
   gap: 80px;
 }
 
-/* Link menu */
-.secondary-nav .ah-list--design1 > li > a {
+#navigation2 .ah-list--design2 > li > a {
   color: #000000;
   font-size: 15px;
   font-weight: 600;
@@ -2738,35 +2742,38 @@ input::-ms-clear {
   text-decoration: none;
 }
 
-/* Hover menu */
-.secondary-nav .ah-list--design1 > li > a:hover {
+#navigation2 .ah-list--design2 > li > a:hover {
   color: #1c5d6b;
 }
 
-/* Icon NAV 2 */
-.secondary-nav i {
+/* ===== ICON – CANH PHẢI ===== */
+#navigation3 {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* icon */
+#navigation3 i {
   color: #000000;
   font-size: 18px;
 }
 
-.secondary-nav i:hover {
+#navigation3 i:hover {
   color: #1c5d6b;
 }
 
-/*--------------------------------------------------------------
-Dropdown (GIỮ NGUYÊN HOẠT ĐỘNG)
---------------------------------------------------------------*/
-/* KHÔNG set display cho ul dropdown */
+/* ===== DROPDOWN – GIỮ NGUYÊN ===== */
 .has-dropdown {
   position: relative;
 }
 
-.has-dropdown > ul {
+.has-dropdown > ul,
+.has-dropdown > .mini-cart {
   background-color: #ffffff;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
-/* Item dropdown */
 .has-dropdown > ul li a {
   color: #000000;
   font-size: 14px;
