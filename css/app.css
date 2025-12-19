@@ -1437,14 +1437,27 @@ input::-ms-clear {
   color: #ff4500;
 }
 
-.product-o__name>a {
+.product-o__name {
+  min-height: 44px; /* 👈 đảm bảo vùng tên cao cố định */
+  margin-bottom: 6px;
+}
+
+.product-o__name > a {
   color: #333333;
   font-size: 14px;
   font-weight: 600;
+  line-height: 1.4;
+
+  /* 👇 GIỚI HẠN 2 DÒNG */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
   transition: color 0.5s;
 }
 
-.product-o__name>a:hover {
+.product-o__name > a:hover {
   color: #ff4500;
 }
 
