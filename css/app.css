@@ -945,12 +945,12 @@ body {
 .btn--e-secondary {
   color: #ffffff;
   border: 1px solid transparent;
-  background-color: #333333;
+  background-color: #114550;
   transition: background-color .5s ease-in;
 }
 
 .btn--e-secondary:hover {
-  background-color: #303030;
+  background-color: #fa4400;
 }
 
 .btn--e-white-brand {
@@ -3514,7 +3514,7 @@ input::-ms-clear {
 }
 
 .about__h2 {
-  color: #333333;
+  color:#004d40;
   font-weight: 600;
   margin-bottom: 10px;
   font-size: 24px;
@@ -3564,7 +3564,71 @@ input::-ms-clear {
   transition: transform 0.7s ease-in-out;
   transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
 }
+.nyaf-stats {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #ffffff;
+}
 
+.section-title {
+    font-size: 32px;
+    color: #005a66;
+    margin-bottom: 50px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.stat-card {
+    padding: 40px 25px;
+    border-radius: 15px;
+    background: #f8fdfe;
+    border: 1px solid #e0f2f4;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.stat-card:hover {
+    transform: translateY(-12px);
+    background: #005a66;
+    box-shadow: 0 15px 30px rgba(0, 90, 102, 0.2);
+}
+
+/* Đổi màu icon và chữ khi hover */
+.stat-card:hover .stat-icon, 
+.stat-card:hover .stat-number, 
+.stat-card:hover .stat-text {
+    color: #ffffff;
+}
+
+.stat-icon {
+    font-size: 40px;
+    color: #005a66;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.stat-number {
+    font-size: 42px;
+    font-weight: 800;
+    color: #ff4500;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.stat-text {
+    font-size: 15px;
+    color: #ff4500;
+    font-weight: 500;
+    margin: 0;
+}
 .team-member__wrap {
   position: relative;
 }
