@@ -1011,22 +1011,23 @@ body {
 }
 
 .btn--e-white-brand-shadow:hover {
-  border-color: #ff4500;
-  background-color: #ff4500;
+  border-color: var(--main-color);
+  background-color:var(--main-color);
   color: #ffffff;
 }
 
 .btn--e-brand-shadow {
-  border: 1px solid #ff4500;
+  border: 1px solid var(--main-color);
   box-shadow: 1px 2px 8px 0 rgba(36, 37, 38, 0.08);
-  background-color: #ff4500;
+  background-color: var(--main-color);
   color: #ffffff;
   transition: background-color .3s linear, border-color .3s linear;
 }
 
 .btn--e-brand-shadow:hover {
-  border-color: #fa4400;
-  background-color: #fa4400;
+  border-color: var(--main-color);
+  background-color: var(--main-color-darker);
+  transform: translateY(-3px);
 }
 
 /* Countdown Component */
