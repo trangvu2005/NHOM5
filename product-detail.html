@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<html class="no-js" lang="vi">
 <head>
     <meta charset="UTF-8">
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="Nền tảng đặt vé sự kiện, workshop và webinar dành cho sinh viên">
     <meta name="author" content="">
-    <link href="images/favicon.png" rel="shortcut icon">
-    <title>Trang chi tiết sự kiên - UEH EVENT HUB</title>
+    <link href="images/logo/LOGO2.png" rel="shortcut icon">
+    <title>UEH EVENT HUB</title>
 
     <!--====== Google Font ======-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
@@ -21,19 +20,25 @@
 
     <!--====== App ======-->
     <link rel="stylesheet" href="css/app.css">
-     <style>
-    body {
-      background-color:ghostwhite;
-    }
-  </style>
 </head>
-
+<script src="js/christmas-stars.js"></script>
 <body class="config">
+    <!-- Santa Sticker -->
+    <img src="images/logo/santa-sticker.png"
+        class="santa-sticker left-santa"
+        alt="Santa Claus">
+
+    <img src="images/logo/santa-sticker.png"
+        class="santa-sticker right-santa"
+        alt="Santa Claus">
+    
+    <div class="christmas-stars"></div>
+
+
     <div class="preloader is-active">
         <div class="preloader__wrap">
 
-            <img class="preloader__img" src="images/logo/logoUEH3.png" alt="">
-        </div>
+            <img class="preloader__img" src="images/logo/logoUEH3.png" alt=""></div>
     </div>
 
     <!--====== Main App ======-->
@@ -42,6 +47,11 @@
         <!--====== Main Header ======-->
         <header class="header--style-1">
 
+            <div class="header-marquee">
+                <div class="marquee-track christmas-text">
+                  ✨ 🎄 MERRY&nbsp;CHRISTMAS 🎄 ✨ ❄️ 🎁 🎄 MERRY&nbsp;CHRISTMAS 🎄 ✨ ❄️
+                </div>
+            </div>
             <!--====== Nav 1 ======-->
             <nav class="primary-nav primary-nav-wrapper--border">
                 <div class="container">
@@ -51,8 +61,8 @@
 
                         <!--====== Main Logo ======-->
 
-                        <a class="main-logo text-logo" href="index.html">
-                            UEH <span>EVENT HUB</span>
+                        <a class="main-logo image-logo" href="index.html">
+                            <img src="images/logo/LOGO.png" alt="UEH Event Hub">
                         </a>
                         <!--====== End - Main Logo ======-->
 
@@ -62,19 +72,16 @@
 
                             <label for="main-search"></label>
 
-                            <input class="input-text input-text--border-radius input-text--style-1" type="text"
-                                id="main-search" placeholder="Tìm kiếm">
+                            <input class="input-text input-text--border-radius input-text--style-1" type="text" id="main-search" placeholder="Tìm kiếm">
 
-                            <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button>
-                        </form>
+                            <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button></form>
                         <!--====== End - Search Form ======-->
-
+                        
 
                         <!--====== Dropdown Main plugin ======-->
                         <div class="menu-init" id="navigation">
 
-                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-cogs"
-                                type="button"></button>
+                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-cogs" type="button"></button>
 
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
@@ -83,8 +90,7 @@
 
                                 <!--====== List ======-->
                                 <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
-                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left"
-                                        title="Tài khoản">
+                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Tài khoản">
 
                                         <a><i class="far fa-user-circle"></i></a>
 
@@ -96,31 +102,26 @@
 
                                                 <a href="dashboard.html"><i class="fas fa-user-circle u-s-m-r-6"></i>
 
-                                                    <span>Tài khoản</span></a>
-                                            </li>
+                                                    <span>Tài khoản</span></a></li>
                                             <li>
 
                                                 <a href="signup.html"><i class="fas fa-user-plus u-s-m-r-6"></i>
 
-                                                    <span>Đăng ký</span></a>
-                                            </li>
+                                                    <span>Đăng ký</span></a></li>
                                             <li>
 
                                                 <a href="signin.html"><i class="fas fa-lock u-s-m-r-6"></i>
 
-                                                    <span>Đăng nhập</span></a>
-                                            </li>
+                                                    <span>Đăng nhập</span></a></li>
                                             <li>
 
                                                 <a href="signup.html"><i class="fas fa-lock-open u-s-m-r-6"></i>
 
-                                                    <span>Đăng xuất</span></a>
-                                            </li>
+                                                    <span>Đăng xuất</span></a></li>
                                         </ul>
                                         <!--====== End - Dropdown ======-->
                                     </li>
-                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left"
-                                        title="Cài đặt">
+                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Cài đặt">
 
                                         <a><i class="fas fa-user-cog"></i></a>
 
@@ -138,11 +139,9 @@
                                                 <ul style="width:120px">
                                                     <li>
 
-                                                        <a class="u-c-brand">TIẾNG VIỆT</a>
-                                                    </li>
+                                                        <a class="u-c-brand">TIẾNG VIỆT</a></li>
                                                     <li>
-                                                        <a>ENGLISH</a>
-                                                    </li>
+                                                        <a>ENGLISH</a></li>
                                                 </ul>
                                                 <!--====== End - Dropdown ======-->
                                             </li>
@@ -156,16 +155,13 @@
                                                 <ul style="width:225px">
                                                     <li>
 
-                                                        <a class="u-c-brand">VND - VIỆT NAM ĐỒNG</a>
-                                                    </li>
+                                                        <a class="u-c-brand">VND - VIỆT NAM ĐỒNG</a></li>
                                                     <li>
 
-                                                        <a>$ - US DOLLAR</a>
-                                                    </li>
+                                                        <a>$ - US DOLLAR</a></li>
                                                     <li>
 
-                                                        <a>€ - EURO</a>
-                                                    </li>
+                                                        <a>€ - EURO</a></li>
                                                 </ul>
                                                 <!--====== End - Dropdown ======-->
                                             </li>
@@ -174,12 +170,10 @@
                                     </li>
                                     <li data-tooltip="tooltip" data-placement="left" title="Liên hệ">
 
-                                        <a href="tel:+0900901904"><i class="fas fa-phone-volume"></i></a>
-                                    </li>
+                                        <a href="tel:+0900901904"><i class="fas fa-phone-volume"></i></a></li>
                                     <li data-tooltip="tooltip" data-placement="left" title="Mail">
 
-                                        <a href="mailto:contact@domain.com"><i class="far fa-envelope"></i></a>
-                                    </li>
+                                        <a href="mailto:contact@domain.com"><i class="far fa-envelope"></i></a></li>
                                 </ul>
                                 <!--====== End - List ======-->
                             </div>
@@ -191,17 +185,18 @@
                 </div>
             </nav>
             <!--====== End - Nav 1 ======-->
+              
+
             <!--====== Nav 2 ======-->
             <nav class="secondary-nav-wrapper">
                 <div class="container">
-
+                           
                     <!--====== Secondary Nav ======-->
                     <div class="secondary-nav">
 
                         <!--====== Dropdown Main plugin ======-->
                         <div class="menu-init" id="navigation2">
-                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-cog"
-                                type="button"></button>
+                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-cog" type="button"></button>
 
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
@@ -212,8 +207,7 @@
                                 <ul class="ah-list ah-list--design2 ah-list--link-color-secondary">
                                     <li>
 
-                                        <a href="index.html">TRANG CHỦ</a>
-                                    </li>
+                                        <a href="index.html">TRANG CHỦ</a></li>
                                     <li class="has-dropdown">
 
                                         <a>SỰ KIỆN<i class="fas fa-angle-down u-s-m-l-6"></i></a>
@@ -224,39 +218,31 @@
                                         <ul style="width:170px">
                                             <li>
 
-                                                <a href="shop-side-version-2.html">Workshop</a>
-                                            </li>
+                                                <a href="shop-side-version-2.html">Workshop</a></li>
                                             <li>
 
-                                                <a href="shop-side-version-2.html">Webinar</a>
-                                            </li>
+                                                <a href="shop-side-version-2.html">Webinar</a></li>
                                             <li>
 
-                                                <a href="shop-side-version-2.html">Ceremony</a>
-                                            </li>
+                                                <a href="shop-side-version-2.html">Ceremony</a></li>
                                             <li>
 
-                                                <a href="shop-side-version-2.html">Cuộc thi</a>
-                                            </li>
+                                                <a href="shop-side-version-2.html">Cuộc thi</a></li>
                                             <li>
 
-                                                <a href="shop-side-version-2.html">Festival</a>
-                                            </li>
+                                                <a href="shop-side-version-2.html">Festival</a></li>
                                             <li>
 
-                                                <a href="shop-side-version-2.html">Talkshow</a>
-                                            </li>
+                                                <a href="shop-side-version-2.html">Talkshow</a></li>
                                         </ul>
                                         <!--====== End - Dropdown ======-->
                                     </li>
                                     <li>
 
-                                        <a href="contact.html">LIÊN HỆ</a>
-                                    </li>
+                                        <a href="contact.html">LIÊN HỆ</a></li>
                                     <li>
 
-                                        <a href="about.html">VỀ CHÚNG TÔI</a>
-                                    </li>
+                                        <a href="about.html">VỀ CHÚNG TÔI</a></li>
                                 </ul>
                                 <!--====== End - List ======-->
                             </div>
@@ -266,10 +252,8 @@
 
 
                         <!--====== Dropdown Main plugin ======-->
-                        <div class="menu-init" id="navigation3">
-                            <button
-                                class="btn btn--icon toggle-button toggle-button--secondary fas fa-shopping-bag toggle-button-shop"
-                                type="button"></button>
+                        <div class="menu-init" id="navigation3">                         
+                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-shopping-bag toggle-button-shop" type="button"></button>
 
                             <span class="total-item-round">2</span>
 
@@ -282,12 +266,10 @@
                                 <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
                                     <li>
 
-                                        <a href="index.html"><i class="fas fa-home u-c-brand"></i></a>
-                                    </li>
+                                        <a href="index.html"><i class="fas fa-home u-c-brand"></i></a></li>
                                     <li>
 
-                                        <a href="wishlist.html"><i class="far fa-heart"></i></a>
-                                    </li>
+                                        <a href="wishlist.html"><i class="far fa-heart"></i></a></li>
                                     <li class="has-dropdown">
 
                                         <a class="mini-cart-shop-link"><i class="fas fa-shopping-bag"></i>
@@ -309,10 +291,7 @@
 
                                                             <a class="mini-product__link" href="product-detail.html">
 
-                                                                <img class="u-img-fluid"
-                                                                    src="images/product/electronic/product3.jpg"
-                                                                    alt=""></a>
-                                                        </div>
+                                                                <img class="u-img-fluid" src="images/anh su kien/su kien 8.jpg" alt=""></a></div>
                                                         <div class="mini-product__info-wrapper">
 
                                                             <span class="mini-product__category">
@@ -321,14 +300,11 @@
 
                                                             <span class="mini-product__name">
 
-                                                                <a href="product-detail.html">LỄ HỘI VĂN HÓA CHÀO ĐÓN
-                                                                    TÂN SINH VIÊN KHÓA 51 – NỐI VÒNG TAY LỚN 2025: GLOW
-                                                                    TRACK</a></span>
+                                                                <a href="product-detail.html">LỄ HỘI VĂN HÓA CHÀO ĐÓN TÂN SINH VIÊN KHÓA 51 – NỐI VÒNG TAY LỚN 2025: GLOW TRACK</a></span>
 
                                                             <span class="mini-product__quantity">1 x</span>
 
-                                                            <span class="mini-product__price">50.000₫</span>
-                                                        </div>
+                                                            <span class="mini-product__price">50.000₫</span></div>
                                                     </div>
 
                                                     <a class="mini-product__delete-link far fa-trash-alt"></a>
@@ -342,9 +318,7 @@
 
                                                             <a class="mini-product__link" href="product-detail.html">
 
-                                                                <img class="u-img-fluid"
-                                                                    src="images/product/men/product8.jpg" alt=""></a>
-                                                        </div>
+                                                                <img class="u-img-fluid" src="images/anh su kien/su kien 3.jpg" alt=""></a></div>
                                                         <div class="mini-product__info-wrapper">
 
                                                             <span class="mini-product__category">
@@ -353,13 +327,11 @@
 
                                                             <span class="mini-product__name">
 
-                                                                <a href="product-detail.html">LỄ TUYÊN DƯƠNG SINH VIÊN 5
-                                                                    TỐT VÀ CÁN BỘ ĐOÀN - HỘI XUẤT SẮC 2025</a></span>
+                                                                <a href="product-detail.html">LỄ TUYÊN DƯƠNG SINH VIÊN 5 TỐT VÀ CÁN BỘ ĐOÀN - HỘI XUẤT SẮC 2025</a></span>
 
                                                             <span class="mini-product__quantity">1 x</span>
 
-                                                            <span class="mini-product__price">0₫</span>
-                                                        </div>
+                                                            <span class="mini-product__price">Miễn phí</span></div>
                                                     </div>
 
                                                     <a class="mini-product__delete-link far fa-trash-alt"></a>
@@ -375,16 +347,12 @@
 
                                                     <span class="subtotal-text">TỔNG TẠM TÍNH</span>
 
-                                                    <span class="subtotal-value">50.000₫</span>
-                                                </div>
+                                                    <span class="subtotal-value">50.000₫</span></div>
                                                 <div class="mini-action">
 
-                                                    <a class="mini-link btn--e-brand-b-2" href="checkout.html">TIẾN HÀNH
-                                                        THANH TOÁN</a>
+                                                    <a class="mini-link btn--e-brand-b-2" href="checkout.html">TIẾN HÀNH THANH TOÁN</a>
 
-                                                    <a class="mini-link btn--e-transparent-secondary-b-2"
-                                                        href="cart.html">XEM GIỎ VÉ</a>
-                                                </div>
+                                                    <a class="mini-link btn--e-transparent-secondary-b-2" href="cart.html">XEM GIỎ VÉ</a></div>
                                             </div>
                                             <!--====== End - Mini Product Statistics ======-->
                                         </div>
