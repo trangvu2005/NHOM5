@@ -2523,6 +2523,50 @@ input::-ms-clear {
   font-size: 13px;
 }
 
+/* ===== FIX ADD TO CART MODAL - TEXT CHỒNG ẢNH ===== */
+
+.success {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ÉP ẢNH NẰM RIÊNG */
+.success__img-wrap {
+  position: relative !important;
+  width: 100%;
+  max-height: 220px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+/* ẢNH KHÔNG TRÀN */
+.success__img-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ÉP KHỐI TEXT XUỐNG DƯỚI ẢNH */
+.success__info-wrap {
+  position: relative !important;
+  width: 100%;
+}
+
+/* TEXT TÊN SỰ KIỆN */
+.success__name {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 6px;
+
+  word-break: break-word;
+}
+
 #quick-look .modal-dialog {
   width: 100%;
   max-width: 991px;
