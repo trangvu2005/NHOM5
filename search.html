@@ -861,24 +861,61 @@
             let foundCount = 0;
         
         
-            products.forEach(product => {
-                // Lấy tên sự kiện bên trong thẻ product-o
-                const productNameElement = product.querySelector('.product-o__name');
-                const nameText = productNameElement ? productNameElement.innerText : "";
-               
-                // Chuẩn hóa tên sự kiện sang không dấu
-                const cleanName = removeVietnameseTones(nameText);
-        
-        
-                // KIỂM TRA: Nếu keyword rỗng HOẶC tên sự kiện khớp với keyword
-                if (keyword === "" || cleanName.includes(keyword)) {
-                    product.closest('.filter__item').style.display = "block"; // Hiện cả khung bao ngoài
-                    foundCount++;
-                } else {
-                    product.closest('.filter__item').style.display = "none"; // Ẩn cả khung bao ngoài
+
+
+            function removeVietnameseTones(str) {
+        if (!str) return "";
+        return str.normalize("NFD")
+                  .replace(/[\u0300-\u036f]/g, "")
+                  .replace(/đ/g, "d").replace(/Đ/g, "D")
+                  .toLowerCase().trim();
+        }
+
+
+        // Đảm bảo chạy sau khi các thư viện vendor đã tải xong
+        window.addEventListener('load', function() {
+            if (window.jQuery) {
+                var $ = window.jQuery;
+            
+                // Khởi tạo Isotope
+                var $grid = $('.filter__grid-wrapper .row').isotope({
+                    itemSelector: '.filter__item',
+                    layoutMode: 'fitRows'
+                });
+
+
+                var params = new URLSearchParams(window.location.search);
+                var rawKeyword = params.get("q") || "";
+                var keyword = removeVietnameseTones(rawKeyword);
+
+
+                // Cập nhật tiêu đề
+                var searchTitle = document.getElementById("searchTitle");
+                if (searchTitle) {
+                    searchTitle.innerText = rawKeyword
+                        ? "Kết quả tìm kiếm cho: \"" + rawKeyword + "\""
+                        : "Tất cả sự kiện";
                 }
-            });
-        
+
+
+                // Thực hiện lọc để các card dồn lên nhau
+                $grid.isotope({
+                    filter: function() {
+                        var nameText = $(this).find('.product-o__name').text();
+                        return keyword === "" || removeVietnameseTones(nameText).includes(keyword);
+                    }
+                });
+
+
+                // Hiển thị thông báo nếu không tìm thấy
+                var foundCount = $grid.data('isotope').filteredItems.length;
+                var noResult = document.getElementById("noResult");
+                if (noResult) {
+                    noResult.style.display = (foundCount === 0) ? "block" : "none";
+                }
+            }
+        });
+
         
             // Hiển thị thông báo nếu không tìm thấy gì
             const noResultElement = document.getElementById("noResult");
